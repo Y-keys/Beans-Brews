@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>Logo</li>
+    <nav id="topNav">
+      <div><img src="" id="BBLogo">B&B Logo</div>
+        <ul class="navItems">
             <li>Main Menu</li>
             <li><img src="">Tomorrow at 6:30pm</li>
             <li><img src="">Beans & Brews #1802</li>
@@ -28,18 +28,44 @@
         <div class="col-8">
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                <div><p>Description: 
-                    We're proud to offer a cold brew with our signature High-Altitude Roasted beans brewed over twelve hours, resulting in a smooth, full-bodied tast with hints of cocoa and caramel.</p>
+              <div><p>We're proud to offer a cold brew with our signature High-Altitude Roasted beans brewed over twelve hours, resulting in a smooth, full-bodied tast with hints of cocoa and caramel.</p>
+              </div>
+              <div class="grid-container">
+                <div class="itemLabel"><h5>Size</h5>
                 </div>
-                <div><h5>Size</h5>
-                </div>
-                <div><h5>Extra Espresso Shots</h5>
+                <div class="options"><p>12oz $2.50</p></div>
+                <div class="itemLabel"><h5>Extra Espresso Shots</h5>
                     <p>Optional</p>
                 </div>
-                <div><h5>Milk Splash Options</h5>
+                <div class="options">
+                  <input type="checkbox" id="splash-soy" class="checkbox" name="splash-soy" value="splash-soy"><label for="splash-soy">X-Shot Espresso</label></div>
+                <div class="itemLabel"><h5>Milk Splash Options</h5>
                 <p>Optional- Select up to 4</p>
                 </div>
-                <div><h5>Add Sugar</h5></div>
+                <div class="options">
+                  <div class="options-grid">
+                    <div><input type="checkbox" id="splash-oat" class="checkbox" name="splash-oat" value="splash-oat"><label for="splash-oat">Splash Oat Milk</label></div>
+                    <div><input type="checkbox" id="splash-NonDairy" class="checkbox" name="splash-NonDairy" value="splash-NonDairy">
+                      <label for="splash-NonDairy">Splash NonDairy</label></div>
+                  <div><input type="checkbox" id="splash-coconut" class="checkbox" name="splash-coconut" value="splash-coconut"><label for="splash-coconut">Splash Coconut Milk</label></div>
+                  <div><input type="checkbox" id="splash-almond" class="checkbox" name="splash-almond" value="splash-almond"><label for="splash-almond">Splash Almond Milk</label></div>
+                  <div><input type="checkbox" id="splash-soy" class="checkbox" name="splash-soy" value="splash-soy"><label for="splash-soy">Splash Soy Milk</label></div>
+                  <div>
+                    <input type="checkbox" id="splash-breve" class="checkbox" name="splash-breve" value="splash-breve"><label for="splash-breve">Splash Breve</label>
+                  </div>
+                  <div><input type="checkbox" id="splash-skim" class="checkbox" name="splash-skim" value="splash-skim"><label for="splash-skim">Splash Skim Milk</label></div>
+                  <div><input type="checkbox" id="splash-whole" class="checkbox" name="splash-whole" value="splash-whole"><label for="splash-whole">Splash Whole Milk</label></div>
+                </div>
+                </div>
+                <div class="itemLabel"><h5>Add Sugar</h5></div>
+                <div class="options">
+                  <div class="options-grid">
+                  <p>Splenda</p>
+                  <p>Sugar</p>
+                  </div>
+                </div>
+              </div>    
+                
 
             </div>
             <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>

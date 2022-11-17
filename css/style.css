@@ -1,3 +1,41 @@
+#topNav {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.navItems  {
+  display: flex;
+  flex-direction: row;
+}
+
+.navItems li {
+  list-style: none;
+  padding: 20px;
+}
+
+#BBLogo {
+  padding:20px;
+}
+
 .itemPic {
   width: 200px;  
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+  "itemLabel options"
+  "itemLabel options"
+  "itemLabel options"
+  "itemLabel options"
+}
+
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.checkbox {
+  margin-right: 8px;
 }
