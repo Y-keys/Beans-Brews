@@ -1,8 +1,51 @@
+* {
+  font-family: 'Nunito Sans','Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nunito Sans','Open Sans', 'Helvetica Neue', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 21px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+.small-text {
+  font-size: 0.8em;
+}
+
 #topNav {
   display: flex;
   flex-direction: row;
-  padding: 20px;
+  padding: 20px 3%;
+  align-items: center;
+  background-color: #DFD4D0;
+  color: #2B1812;
 }
+
 .navItems  {
   display: flex;
   flex-direction: row;
@@ -13,12 +56,54 @@
   padding: 20px;
 }
 
-#BBLogo {
-  padding:20px;
+.navItems a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navItems a:hover {
+  text-decoration: underline;
+  color: inherit;
+  font-weight: 600;
+}
+
+.BBLogo {
+  width: 75px;
+}
+
+.icon {
+  margin-right: 3px;
+}
+
+#cart {
+  padding: 24px 3%;
+}
+
+.cartTitle {
+  text-align: center;
 }
 
 .itemPic {
-  width: 200px;  
+  width: 50%;  
+  margin-right: 3%;
+}
+
+.itemName {
+  font-family: 'Maitree';
+  font-weight: 600;
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+  color: #2B1812;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #2B1812;
+  background-color: #EEF2F3;
+  border-color: #EEF2F3;
 }
 
 .grid-container {
@@ -39,3 +124,4 @@
 .checkbox {
   margin-right: 8px;
 }
+
