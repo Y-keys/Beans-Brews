@@ -154,6 +154,12 @@ body {
   row-gap: 28px;
 }
 
+.line {
+  grid-column: 1 / -1;
+  height: 1px;
+  background: #ACACAC;
+}
+
 .options-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
