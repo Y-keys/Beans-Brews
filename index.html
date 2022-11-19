@@ -9,24 +9,31 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!--Top Navigation-->
     <nav id="topNav">
       <div><img src="images/beans and brews logo.jpg" class="BBLogo"></div>
         <ul class="navItems">
             <li><a href="#">Main Menu</a></li>
             <li><img src="images/clock.svg" class="icon">Tomorrow at 6:30pm<img src="images/arrow-right.svg"></li>
-            <li><img src="images/location.svg" class="icon">Beans & Brews #1802<img src="images/arrow-right.svg"></li>
+            <li><img src="images/location.svg" class="icon">Eagle Mountain #1802<img src="images/arrow-right.svg"></li>
+            <div><img src="images/cart.svg"></div>
         </ul>
+        
     </nav>
 
+<!--Cart section- Left side of the page: Item tabs-->
   <section id="cart">
-    <div class="col-4 cartTitle"><h3>Items in Cart</h3></div>
+    <div class="col-4 cartTitle"><h4>Items in Cart</h4></div>
     <div class="row cart-container">
-        <div class="col-4">
+        <div class="col-4 left-side">
           <div class="list-group" id="list-tab" role="tablist">
-            <a class="list-group-item list-group-item-action active itemName" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home"><img class="itemPic" src="images/cold_brew.png">Cold Brew</a>
-            <a class="list-group-item list-group-item-action itemName" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><img class="itemPic" src="images/bacon_sandwitch.png"> Bacon, Egg & Cheddar Croissant</a>
+            <a class="list-group-item list-group-item-action active itemName" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
+              <img class="itemPic" src="images/cold_brew.png">
+              <h5>Cold Brew</h5></a>
+            <a class="list-group-item list-group-item-action itemName" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><img class="itemPic" src="images/bacon_sandwitch.png"><h5>Bacon, Egg & Cheddar Croissant</h5></a>
           </div>
         </div>
+        <!--Right side of the page: Cold Brew Options-->
         <div class="col-8">
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
@@ -35,28 +42,69 @@
               <div class="grid-container">
                 <div class="itemLabel"><h6>Size</h6>
                 </div>
-                <div class="options"><p>12oz $2.50</p></div>
+                <div class="options-grid">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      16oz | 0 Cal <br>$3.85
+                    </label>
+                  </div>
+                  <div class="form-check">
+                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      24oz | 0 Cal <br>$4.35 </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                   <label class="form-check-label" for="flexRadioDefault1">
+                    32oz | 0 Cal <br>$4.85</label>
+                 </div>
+
+                </div>
                 <div class="itemLabel"><h6>Extra Espresso Shots</h6>
                     <p class="small-text">Optional</p>
                 </div>
-                <div class="options">
-                  <input type="checkbox" id="splash-soy" class="checkbox" name="splash-soy" value="splash-soy"><label for="splash-soy">X-Shot Espresso</label></div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="x-espresso" id="x-espresso">
+                  <label class="form-check-label" for="x-espresso">X Espresso Shot <br> $0.90</label>
+                </div>
                 <div class="itemLabel"><h6>Milk Splash Options</h6>
                 <p class="small-text">Optional- Select up to 4</p>
                 </div>
                 <div class="options">
                   <div class="options-grid">
-                    <div><input type="checkbox" id="splash-oat" class="checkbox" name="splash-oat" value="splash-oat"><label for="splash-oat">Splash Oat Milk</label></div>
-                    <div><input type="checkbox" id="splash-NonDairy" class="checkbox" name="splash-NonDairy" value="splash-NonDairy">
-                      <label for="splash-NonDairy">Splash NonDairy</label></div>
-                  <div><input type="checkbox" id="splash-coconut" class="checkbox" name="splash-coconut" value="splash-coconut"><label for="splash-coconut">Splash Coconut Milk</label></div>
-                  <div><input type="checkbox" id="splash-almond" class="checkbox" name="splash-almond" value="splash-almond"><label for="splash-almond">Splash Almond Milk</label></div>
-                  <div><input type="checkbox" id="splash-soy" class="checkbox" name="splash-soy" value="splash-soy"><label for="splash-soy">Splash Soy Milk</label></div>
-                  <div>
-                    <input type="checkbox" id="splash-breve" class="checkbox" name="splash-breve" value="splash-breve"><label for="splash-breve">Splash Breve</label>
-                  </div>
-                  <div><input type="checkbox" id="splash-skim" class="checkbox" name="splash-skim" value="splash-skim"><label for="splash-skim">Splash Skim Milk</label></div>
-                  <div><input type="checkbox" id="splash-whole" class="checkbox" name="splash-whole" value="splash-whole"><label for="splash-whole">Splash Whole Milk</label></div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="splash-oat" id="splash-oat">
+                      <label class="form-check-label" for="splash-oat">Splash Oat Milk</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="splash-NonDairy" id="splash-NonDairy">
+                      <label class="form-check-label" for="splash-NonDairy">Splash NonDairy</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="splash-coconut" id="splash-coconut">
+                      <label class="form-check-label" for="splash-coconut">Splash Coconut Milk</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="splash-almond" id="splash-almond">
+                      <label class="form-check-label" for="splash-almond">Splash Almond Milk</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="splash-soy" id="splash-soy">
+                      <label class="form-check-label" for="splash-soy">Splash Soy Milk</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="splash-breve" id="splash-breve">
+                      <label class="form-check-label" for="splash-breve">Splash Breve</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="splash-skim" id="splash-skim">
+                      <label class="form-check-label" for="splash-skim">Splash Skim Milk</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="splash-whole" id="splash-whole">
+                      <label class="form-check-label" for="splash-whole">Splash Whole Milk</label>
+                    </div>
                 </div>
                 </div>
                 <div class="itemLabel"><h6>Add Sugar</h6><p class="small-text">Optional</p></div>
@@ -80,5 +128,6 @@
    
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+      <script src="./index.js"></script>
 </body>
 </html>

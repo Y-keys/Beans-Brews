@@ -1,6 +1,6 @@
 * {
   font-family: 'Nunito Sans','Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,27 +10,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 32px;
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 30px;
-}
-
-h4 {
   font-size: 24px;
 }
 
+h4 {
+  font-size: 20px;
+}
+
 h5 {
-  font-size: 21px;
+  font-size: 18px;
 }
 
 h6 {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .small-text {
@@ -42,13 +42,17 @@ h6 {
   flex-direction: row;
   padding: 20px 3%;
   align-items: center;
-  background-color: #DFD4D0;
-  color: #2B1812;
+  background-color: white;
+  color: #4D3620;
+  filter: drop-shadow(0px 1px 3px #C3BEBC);
 }
 
 .navItems  {
   display: flex;
   flex-direction: row;
+  position: absolute;
+  right: 3%;
+
 }
 
 .navItems li {
@@ -75,12 +79,20 @@ h6 {
   margin-right: 3px;
 }
 
-#cart {
-  padding: 24px 3%;
+.row {
+  --bs-gutter-x: 0;
 }
+
+.left-side {
+  height: 100vh;
+  background-color: #EEF2F3;
+}
+
 
 .cartTitle {
   text-align: center;
+  background-color: #EEF2F3;
+  padding: 24px 0px 12px 0px;
 }
 
 .itemPic {
@@ -88,22 +100,29 @@ h6 {
   margin-right: 3%;
 }
 
-.itemName {
-  font-family: 'Maitree';
-  font-weight: 600;
+.list-group {
+  --bs-list-group-border-radius: 0;
 }
 
 .list-group-item {
   display: flex;
   align-items: center;
   color: #2B1812;
+  background-color: #EEF2F3;
+  padding-left: 10%;
+  border: none;
 }
 
 .list-group-item.active {
   z-index: 2;
   color: #2B1812;
-  background-color: #EEF2F3;
-  border-color: #EEF2F3;
+  background-color:white;
+  border-color: white;
+  border-left: 12px solid #4D3620;
+}
+
+.tab-pane {
+  padding: 0 3% 0 36px;
 }
 
 .grid-container {
@@ -113,7 +132,8 @@ h6 {
   "itemLabel options"
   "itemLabel options"
   "itemLabel options"
-  "itemLabel options"
+  "itemLabel options";
+  row-gap: 28px;
 }
 
 .options-grid {
@@ -121,7 +141,12 @@ h6 {
   grid-template-columns: 1fr 1fr;
 }
 
-.checkbox {
-  margin-right: 8px;
+.form-check-input {
+
+}
+
+.form-check-input:checked {
+  background-color: #5A7C86;
+  border-color: #5A7C86;
 }
 
