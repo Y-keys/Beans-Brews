@@ -14,8 +14,8 @@
       <div><img src="images/beans and brews logo.jpg" class="BBLogo"></div>
         <ul class="navItems">
             <li><a href="#">Main Menu</a></li>
-            <li><img src="images/clock.svg" class="icon">Tomorrow at 6:30pm<img src="images/arrow-right.svg"></li>
-            <li><img src="images/location.svg" class="icon">Eagle Mountain #1802<img src="images/arrow-right.svg"></li>
+            <li><img src="images/clock.svg" class="icon"><a href="#">Tomorrow at 6:30pm</a><img src="images/arrow-right.svg"></li>
+            <li><img src="images/location.svg" class="icon"><a href="#">Eagle Mountain #1802</a><img src="images/arrow-right.svg"></li>
             <div><img src="images/cart.svg"></div>
         </ul>
         
@@ -29,19 +29,32 @@
           <div class="list-group" id="list-tab" role="tablist">
             <a class="list-group-item list-group-item-action active itemName" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">
               <img class="itemPic" src="images/cold_brew.png">
-              <h5>Cold Brew</h5></a>
-            <a class="list-group-item list-group-item-action itemName" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><img class="itemPic" src="images/bacon_sandwitch.png"><h5>Bacon, Egg & Cheddar Croissant</h5></a>
+              <div>
+              <h5>Cold Brew</h5>
+            <p>16oz | 0 Cal</p>
+          <h6>$3.85</h6></div></a>
+            <a class="list-group-item list-group-item-action itemName" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile"><img class="itemPic" src="images/bacon_sandwitch.png">
+              <div><h5>Bacon, Egg & Cheddar Croissant</h5><p>1ct | 500 Cal</p>
+              <h6>$5.75</h6></div></a>
           </div>
-          <div class="prices"><span>Subtotal:      $9.60</span>
-            <p>Tax: $0.58</p><span>
-            <h4>Total: $10.8</h4>
-          </div>
+            <div class="row prices">
+             <div class="col-4">
+                <p>Subtotal:</p>
+                <p>Tax:</p>
+                <h4>Total:</h4>
+             </div>
+              <div class="col-4">
+                <p>$9.60</p>
+                <p>$0.58</p>
+                <h4>$10.18</h4>
+             </div>
+            </div>
         </div>
         <!--Right side of the page: Cold Brew Options-->
         <div class="col-8">
           <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-              <div><p>We're proud to offer a cold brew with our signature High-Altitude Roasted beans brewed over twelve hours, resulting in a smooth, full-bodied tast with hints of cocoa and caramel.</p>
+              <div class="item-description"><p>We're proud to offer a cold brew with our signature High-Altitude Roasted beans brewed over twelve hours, resulting in a smooth, full-bodied tast with hints of cocoa and caramel.</p>
               </div>
               <div class="grid-container">
                 <div class="itemLabel"><h6>Size</h6>
@@ -50,18 +63,18 @@
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
-                      16oz | 0 Cal <br>$3.85
+                      16oz | 0 Cal <span class="option-price">$3.85</span>
                     </label>
                   </div>
                   <div class="form-check">
                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
-                      24oz | 0 Cal <br>$4.35 </label>
+                      24oz | 0 Cal <span class="option-price">$4.35</span></label>
                   </div>
                   <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                    <label class="form-check-label" for="flexRadioDefault1">
-                    32oz | 0 Cal <br>$4.85</label>
+                    32oz | 0 Cal <span class="option-price">$4.85</span></label>
                  </div>
 
                 </div>
@@ -70,7 +83,7 @@
                 </div>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="x-espresso" id="x-espresso">
-                  <label class="form-check-label" for="x-espresso">X Espresso Shot <br> $0.90</label>
+                  <label class="form-check-label" for="x-espresso">X Espresso Shot <span class="option-price">$0.90</span></label>
                 </div>
                 <div class="itemLabel"><h6>Milk Splash Options</h6>
                 <p class="small-text">Optional- Select up to 4</p>
@@ -114,8 +127,8 @@
                 <div class="itemLabel"><h6>Add Sugar</h6><p class="small-text">Optional</p></div>
                 <div class="options">
                   <div class="options-grid">
-                  <p>Splenda</p>
-                  <p>Sugar</p>
+                  <div><p>Splenda<img src="images/minus-circle.svg" class="quantity-icon">0<img src="images/plus-circle.svg" class="quantity-icon"></p></div>
+                  <div><p>Sugar<img src="images/minus-circle.svg" class="quantity-icon">0<img src="images/plus-circle.svg" class="quantity-icon"></p></div>
                   </div>
                 </div>
               </div>    
